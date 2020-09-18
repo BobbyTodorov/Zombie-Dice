@@ -1,5 +1,5 @@
 //import ZombieDiceLibrary
-import SimpleDie
+import ZombieDie
 
 let die = SimpleDie<String>(dieSidesList: ["asd1","asd2","asd3","asd"])
 print(die.roll()!)

@@ -9,9 +9,9 @@ let package = Package(
     targets: [
         .target(
             name: "ZombieDice",
-            dependencies: ["SimpleDie"]),
+            dependencies: ["ZombieDie"]),
         .target(
-            name: "SimpleDie",
+            name: "ZombieDie",
             dependencies: [])
     ]
 )
