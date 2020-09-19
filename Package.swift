@@ -9,7 +9,10 @@ let package = Package(
     targets: [
         .target(
             name: "ZombieDice",
-            dependencies: ["Board","ZombieDicePlayer"]),
+            dependencies: ["GameCore"]),
+        .target(
+            name: "GameCore",
+            dependencies: ["ZombieDicePlayer","Board"]),
         .target(
             name: "ZombieDicePlayer",
             dependencies: ["Player","Board","ZombieDie"]),

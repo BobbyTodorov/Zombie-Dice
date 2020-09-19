@@ -1,5 +1,4 @@
 import Player
-import Board
 import ZombieDie
 
 public class ZombieDicePlayer : Player

@@ -1,14 +1,6 @@
 //testing here
-import Board
-import ZombieDicePlayer
+import GameCore
 
-let board = Board()
-for i in board.zombieDice {
-    i.printZDie()
-}
-print("\n")
-
-var zdp:ZombieDicePlayer = ZombieDicePlayer(playerName: "Bobi")
-print(zdp.ThrowAllDice())
-
+let test = GameCore(playersCount: 3)
+test.PrintPlayersScore()
 
