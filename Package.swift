@@ -9,12 +9,21 @@ let package = Package(
     targets: [
         .target(
             name: "ZombieDice",
+            dependencies: ["Board","ZombieDicePlayer"]),
+        .target(
+            name: "ZombieDicePlayer",
+            dependencies: ["Player","Board","ZombieDie"]),
+        .target(
+            name: "Board",
             dependencies: ["ZombieDie"]),
         .target(
             name: "ZombieDie",
             dependencies: ["SimpleDie"]),
         .target(
             name: "SimpleDie",
+            dependencies: []),
+        .target(
+            name: "Player",
             dependencies: [])
     ]
 )

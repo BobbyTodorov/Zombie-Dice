@@ -8,4 +8,9 @@ public class ZombieDie : SimpleDie<String>
         self.color = color
         super.init(dieSidesList: dieSidesList)
     }
+
+    public func printZDie()    //test purposes
+    {
+        print("sides: \(sides) --- color : \(color)")
+    }
 }

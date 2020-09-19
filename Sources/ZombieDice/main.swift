@@ -1,7 +1,14 @@
-//import ZombieDiceLibrary
-import ZombieDie
+//testing here
+import Board
+import ZombieDicePlayer
 
-let zDie = ZombieDie(dieSidesList: ["asd1","asd2","asd3","asd"], color: "red")
-print("\(zDie.roll()!) with color: \(zDie.color)")
-//let game = Game()
-//game.run()
+let board = Board()
+for i in board.zombieDice {
+    i.printZDie()
+}
+print("\n")
+
+var zdp:ZombieDicePlayer = ZombieDicePlayer(playerName: "Bobi")
+print(zdp.ThrowAllDice())
+
+

@@ -1,7 +1,7 @@
 open class SimpleDie<SideType>
 {
     public let numberOfSides : Int
-    var sides:[SideType]
+    public var sides:[SideType]
 
     public init(dieSidesList: [SideType])
     {
