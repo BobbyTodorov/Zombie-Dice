@@ -14,9 +14,3 @@ open class SimpleDie<SideType>
         return sides.randomElement()
     }
 }
-
-public extension SimpleDie where SideType == String 
-{
-
-    
-}

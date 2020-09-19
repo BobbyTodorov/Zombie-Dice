@@ -1,7 +1,7 @@
 //import ZombieDiceLibrary
 import ZombieDie
 
-let die = SimpleDie<String>(dieSidesList: ["asd1","asd2","asd3","asd"])
-print(die.roll()!)
+let zDie = ZombieDie(dieSidesList: ["asd1","asd2","asd3","asd"], color: "red")
+print("\(zDie.roll()!) with color: \(zDie.color)")
 //let game = Game()
 //game.run()
