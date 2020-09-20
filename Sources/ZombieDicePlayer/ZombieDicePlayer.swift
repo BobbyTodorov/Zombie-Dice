@@ -11,12 +11,13 @@ public class ZombieDicePlayer : Player
     }
     public func Draw(numberOfDice: Int, fromSetOfDice: inout [ZombieDie]) -> [ZombieDie]
     {
-        assert(numberOfDice <= 0 || numberOfDice > 3, "Player \(name) is attempting to draw an invalid number of dice.")
+        assert(numberOfDice > 0 || numberOfDice <= 3, "Player \(name) is attempting to draw an invalid number of dice.")
 
         fromSetOfDice.shuffle()
         for zd in 0...2
         {
-            playerDice[zd] = fromSetOfDice[zd]
+            playerDice[zd] = fromSetOfDice[0]
+            fromSetOfDice.removeFirst()
         }
         return playerDice
     }

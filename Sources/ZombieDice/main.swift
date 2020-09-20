@@ -1,6 +1,7 @@
 //testing here
 import GameCore
 
-let test = GameCore(playersCount: 3)
-test.PrintPlayersScore()
+let test = GameCore()
+test.SimulateTurn(playerPlaying: test.players[0])
+print(test.players[0].GetScore())
 
