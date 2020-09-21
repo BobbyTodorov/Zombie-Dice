@@ -36,19 +36,18 @@ DESCRIPTION:
       - ResetPlayersScore() - resets all players' score to 0
       - GetAnswerYN() - asks the player "yes/no"
       
-      - SimulateTurn(playerPlaying : ZombieDicePlayer) - main turn logic and interface:
-            - drawnZDice = playerPlaying.Draw(numberOfDice: 3, fromSetOfDice: &board.zombieDice)
-            - SimulateTurnThrow(playerPlaying: playerPlaying, diceToThrow: drawnZDice, numberOfWeaponsSoFar: &weaponsN)
-            - draw another 3?
-            - manage results
+      - SimulateTurn(playerPlaying : ZombieDicePlayer) - main turn logic and interface
+           - drawnZDice = playerPlaying.Draw(numberOfDice: 3, fromSetOfDice: &board.zombieDice)
+           - SimulateTurnThrow(playerPlaying: playerPlaying, diceToThrow: drawnZDice, numberOfWeaponsSoFar: &weaponsN)
+           - draw another 3?
+           - manage results
       
-      - SimulateTurnThrow(playerPlaying: ZombieDicePlayer, diceToThrow: [ZombieDie], numberOfWeaponsSoFar: inout Int) -> Int 
- - simulates a throw; keeps the so far rolled 💥 in mind
-            - throw result
-            - rolled 3 💥 so far? -> player's turn is over with 0 gained points
-            - manage throw result
-                - 🧠 -> +1 point at the end of the turn for current player
-                - 👣 -> ask for rerolling that Zombie Die
+      - SimulateTurnThrow(playerPlaying: ZombieDicePlayer, diceToThrow: [ZombieDie], numberOfWeaponsSoFar: inout Int) -> Int
+           - throw result
+           - rolled 3 💥 so far? -> player's turn is over with 0 gained points
+           - manage throw result
+              - 🧠 -> +1 point at the end of the turn for current player
+              - 👣 -> ask for rerolling that Zombie Die
 
       - Run() - runs the game; while (there is no winner) {give next player in "players" a turn}; a winner? -> ask for new game with same parameters or shut the game down
 
