@@ -1,4 +1,7 @@
-# ZombieDice
+                                          ZOMBIE DICE GAME 
+                              SU - FMI - SWIFT PROGRAMMING COURSE PROJECT
+
+
 DESCRIPTION:
 
 1) CLASS SimpleDie - implements a standart n-sided generic die that can be rolled
