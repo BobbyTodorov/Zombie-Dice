@@ -6,7 +6,7 @@ DESCRIPTION:
       - [sides]
       - Roll()
 
-2) CLASS ZombieDie : SimpleDie<String> - implements a printable, String 6-sided "Zombie Die" with a color property
+2) CLASS ZombieDie : SimpleDie <String> - implements a printable, String 6-sided "Zombie Die" with a color property
       - color
       - PrintZDie()
   
