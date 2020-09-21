@@ -3,11 +3,13 @@ import ZombieDie
 public class Board
 {
     public var zombieDice:[ZombieDie]
+    
     public init()
     {
         zombieDice = Array()
         Reset()
     }
+
     public func Reset()
     {
         zombieDice = Array(repeating: ZombieDie(dieSidesList: [], color: ""), count: 13)
