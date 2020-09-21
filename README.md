@@ -49,6 +49,8 @@ DESCRIPTION:
               - 🧠 -> +1 point at the end of the turn for current player
               - 👣 -> ask for rerolling that Zombie Die
 
-      - Run() - runs the game; while (there is no winner) {give next player in "players" a turn}; a winner? -> ask for new game with same parameters or shut the game down
+      - Run() - runs the game 
+           - while (there is no winner) {give next player in "players" a turn}
+           - a winner? -> ask for new game with same parameters or shut the game down
 
 7) ZombieDice (main) - initializes the Game and runs it
