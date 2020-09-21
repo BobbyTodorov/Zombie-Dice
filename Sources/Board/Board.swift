@@ -5,11 +5,12 @@ public class Board
     public var zombieDice:[ZombieDie]
     public init()
     {
-        zombieDice = Array(repeating: ZombieDie(dieSidesList: [], color: ""), count: 13)
+        zombieDice = Array()
         Reset()
     }
     public func Reset()
     {
+        zombieDice = Array(repeating: ZombieDie(dieSidesList: [], color: ""), count: 13)
         InitZombieDice()
     }
 

@@ -9,8 +9,14 @@ open class Player
     }
     public func IncreaseScore(by: Int) 
     {
-        score += by
+        if by > 0 { score += by }
     }
+
+    public func ResetScore()
+    {
+        score = 0
+    }
+    
     public func GetScore() -> Int
     {
         return score
