@@ -38,7 +38,7 @@ DESCRIPTION:
       
       - SimulateTurn(playerPlaying : ZombieDicePlayer) - main turn logic and interface
            - drawnZDice = playerPlaying.Draw(numberOfDice: 3, fromSetOfDice: &board.zombieDice)
-           - SimulateTurnThrow(playerPlaying: playerPlaying, diceToThrow: drawnZDice, numberOfWeaponsSoFar: &weaponsN)
+           - pointsToGain = SimulateTurnThrow(playerPlaying: playerPlaying, diceToThrow: drawnZDice, numberOfWeaponsSoFar: &weaponsN)
            - draw another 3?
            - manage results
       
