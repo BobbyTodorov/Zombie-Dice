@@ -47,7 +47,7 @@ DESCRIPTION:
       
       - SimulateTurnThrow(playerPlaying: ZombieDicePlayer, diceToThrow: [ZombieDie], numberOfWeaponsSoFar: inout Int) -> Int
            - throw result
-           - rolled 3 💥 so far? -> player's turn is over with 0 gained points
+           - rolled 3x💥 so far? -> player's turn is over with 0 gained points
            - manage throw result
               - 🧠 -> +1 point at the end of the turn for current player
               - 👣 -> ask for rerolling that Zombie Die
