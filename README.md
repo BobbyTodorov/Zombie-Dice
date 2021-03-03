@@ -57,3 +57,5 @@ DESCRIPTION:
            - a winner? -> ask for new game with same parameters or shut the game down
 
 7) ZombieDice (main) - initializes the Game Core and runs the game
+
+TODO: Refactor long methods.
